@@ -1,0 +1,22 @@
+<?php session_start();
+unset($_SESSION["sid"]);
+unset($_SESSION["pwd"]);
+unset($_SESSION["president_id"]);
+unset($_SESSION["ivpresident_id"]);
+unset($_SESSION["evpresident_id"]);
+unset($_SESSION["secretary_id"]);
+unset($_SESSION["auditor_id"]);
+unset($_SESSION["treasurer_id"]);
+unset($_SESSION["pro_id"]);
+unset($_SESSION["bm_id"]);
+$_SESSION['votep'] = 0;
+$_SESSION['voteivp'] = 0;
+$_SESSION['voteevp'] = 0;
+$_SESSION['votesec'] = 0;
+$_SESSION['votetre'] = 0;
+$_SESSION['voteaud'] = 0;
+$_SESSION['votepro'] = 0;
+$_SESSION['votebm'] = 0;
+echo "<div id='successnotif' style='font-size:15px'>You have successfully logout! Thanks for visiting! :)</div>";
+include('index.php');			
+?>
